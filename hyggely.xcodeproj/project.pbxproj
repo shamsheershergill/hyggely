@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB8E54831F75D6FB00DB41AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */; };
+		EB8E54851F75D6FB00DB41AB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54841F75D6FB00DB41AB /* RootViewController.swift */; };
+		EB8E54871F75D6FB00DB41AB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54861F75D6FB00DB41AB /* DataViewController.swift */; };
+		EB8E54891F75D6FB00DB41AB /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54881F75D6FB00DB41AB /* ModelController.swift */; };
+		EB8E548C1F75D6FB00DB41AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548A1F75D6FB00DB41AB /* Main.storyboard */; };
+		EB8E548E1F75D6FB00DB41AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548D1F75D6FB00DB41AB /* Assets.xcassets */; };
+		EB8E54911F75D6FB00DB41AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548F1F75D6FB00DB41AB /* LaunchScreen.storyboard */; };
+		EB8E549C1F75D6FB00DB41AB /* hyggelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E549B1F75D6FB00DB41AB /* hyggelyTests.swift */; };
+		EB8E54A71F75D6FC00DB41AB /* hyggelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54A61F75D6FC00DB41AB /* hyggelyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB8E54981F75D6FB00DB41AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB8E54771F75D6FB00DB41AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E547E1F75D6FB00DB41AB;
+			remoteInfo = hyggely;
+		};
+		EB8E54A31F75D6FC00DB41AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB8E54771F75D6FB00DB41AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8E547E1F75D6FB00DB41AB;
+			remoteInfo = hyggely;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB8E547F1F75D6FB00DB41AB /* hyggely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyggely.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB8E54841F75D6FB00DB41AB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		EB8E54861F75D6FB00DB41AB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		EB8E54881F75D6FB00DB41AB /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		EB8E548B1F75D6FB00DB41AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB8E548D1F75D6FB00DB41AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB8E54901F75D6FB00DB41AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB8E54921F75D6FB00DB41AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB8E54971F75D6FB00DB41AB /* hyggelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyggelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E549B1F75D6FB00DB41AB /* hyggelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyggelyTests.swift; sourceTree = "<group>"; };
+		EB8E549D1F75D6FC00DB41AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB8E54A21F75D6FC00DB41AB /* hyggelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyggelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8E54A61F75D6FC00DB41AB /* hyggelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyggelyUITests.swift; sourceTree = "<group>"; };
+		EB8E54A81F75D6FC00DB41AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB8E547C1F75D6FB00DB41AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8E54941F75D6FB00DB41AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8E549F1F75D6FC00DB41AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB8E54761F75D6FB00DB41AB = {
+			isa = PBXGroup;
+			children = (
+				EB8E54811F75D6FB00DB41AB /* hyggely */,
+				EB8E549A1F75D6FB00DB41AB /* hyggelyTests */,
+				EB8E54A51F75D6FC00DB41AB /* hyggelyUITests */,
+				EB8E54801F75D6FB00DB41AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB8E54801F75D6FB00DB41AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB8E547F1F75D6FB00DB41AB /* hyggely.app */,
+				EB8E54971F75D6FB00DB41AB /* hyggelyTests.xctest */,
+				EB8E54A21F75D6FC00DB41AB /* hyggelyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB8E54811F75D6FB00DB41AB /* hyggely */ = {
+			isa = PBXGroup;
+			children = (
+				EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */,
+				EB8E54841F75D6FB00DB41AB /* RootViewController.swift */,
+				EB8E54861F75D6FB00DB41AB /* DataViewController.swift */,
+				EB8E54881F75D6FB00DB41AB /* ModelController.swift */,
+				EB8E548A1F75D6FB00DB41AB /* Main.storyboard */,
+				EB8E548D1F75D6FB00DB41AB /* Assets.xcassets */,
+				EB8E548F1F75D6FB00DB41AB /* LaunchScreen.storyboard */,
+				EB8E54921F75D6FB00DB41AB /* Info.plist */,
+			);
+			path = hyggely;
+			sourceTree = "<group>";
+		};
+		EB8E549A1F75D6FB00DB41AB /* hyggelyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB8E549B1F75D6FB00DB41AB /* hyggelyTests.swift */,
+				EB8E549D1F75D6FC00DB41AB /* Info.plist */,
+			);
+			path = hyggelyTests;
+			sourceTree = "<group>";
+		};
+		EB8E54A51F75D6FC00DB41AB /* hyggelyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB8E54A61F75D6FC00DB41AB /* hyggelyUITests.swift */,
+				EB8E54A81F75D6FC00DB41AB /* Info.plist */,
+			);
+			path = hyggelyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB8E547E1F75D6FB00DB41AB /* hyggely */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB8E54AB1F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggely" */;
+			buildPhases = (
+				EB8E547B1F75D6FB00DB41AB /* Sources */,
+				EB8E547C1F75D6FB00DB41AB /* Frameworks */,
+				EB8E547D1F75D6FB00DB41AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hyggely;
+			productName = hyggely;
+			productReference = EB8E547F1F75D6FB00DB41AB /* hyggely.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB8E54961F75D6FB00DB41AB /* hyggelyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB8E54AE1F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggelyTests" */;
+			buildPhases = (
+				EB8E54931F75D6FB00DB41AB /* Sources */,
+				EB8E54941F75D6FB00DB41AB /* Frameworks */,
+				EB8E54951F75D6FB00DB41AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB8E54991F75D6FB00DB41AB /* PBXTargetDependency */,
+			);
+			name = hyggelyTests;
+			productName = hyggelyTests;
+			productReference = EB8E54971F75D6FB00DB41AB /* hyggelyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB8E54A11F75D6FC00DB41AB /* hyggelyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB8E54B11F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggelyUITests" */;
+			buildPhases = (
+				EB8E549E1F75D6FC00DB41AB /* Sources */,
+				EB8E549F1F75D6FC00DB41AB /* Frameworks */,
+				EB8E54A01F75D6FC00DB41AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB8E54A41F75D6FC00DB41AB /* PBXTargetDependency */,
+			);
+			name = hyggelyUITests;
+			productName = hyggelyUITests;
+			productReference = EB8E54A21F75D6FC00DB41AB /* hyggelyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB8E54771F75D6FB00DB41AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Shamsheer;
+				TargetAttributes = {
+					EB8E547E1F75D6FB00DB41AB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EB8E54961F75D6FB00DB41AB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB8E547E1F75D6FB00DB41AB;
+					};
+					EB8E54A11F75D6FC00DB41AB = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB8E547E1F75D6FB00DB41AB;
+					};
+				};
+			};
+			buildConfigurationList = EB8E547A1F75D6FB00DB41AB /* Build configuration list for PBXProject "hyggely" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB8E54761F75D6FB00DB41AB;
+			productRefGroup = EB8E54801F75D6FB00DB41AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB8E547E1F75D6FB00DB41AB /* hyggely */,
+				EB8E54961F75D6FB00DB41AB /* hyggelyTests */,
+				EB8E54A11F75D6FC00DB41AB /* hyggelyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB8E547D1F75D6FB00DB41AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8E54911F75D6FB00DB41AB /* LaunchScreen.storyboard in Resources */,
+				EB8E548E1F75D6FB00DB41AB /* Assets.xcassets in Resources */,
+				EB8E548C1F75D6FB00DB41AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8E54951F75D6FB00DB41AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8E54A01F75D6FC00DB41AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB8E547B1F75D6FB00DB41AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8E54851F75D6FB00DB41AB /* RootViewController.swift in Sources */,
+				EB8E54891F75D6FB00DB41AB /* ModelController.swift in Sources */,
+				EB8E54871F75D6FB00DB41AB /* DataViewController.swift in Sources */,
+				EB8E54831F75D6FB00DB41AB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8E54931F75D6FB00DB41AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8E549C1F75D6FB00DB41AB /* hyggelyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8E549E1F75D6FC00DB41AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8E54A71F75D6FC00DB41AB /* hyggelyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB8E54991F75D6FB00DB41AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB8E547E1F75D6FB00DB41AB /* hyggely */;
+			targetProxy = EB8E54981F75D6FB00DB41AB /* PBXContainerItemProxy */;
+		};
+		EB8E54A41F75D6FC00DB41AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB8E547E1F75D6FB00DB41AB /* hyggely */;
+			targetProxy = EB8E54A31F75D6FC00DB41AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB8E548A1F75D6FB00DB41AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB8E548B1F75D6FB00DB41AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB8E548F1F75D6FB00DB41AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB8E54901F75D6FB00DB41AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB8E54A91F75D6FC00DB41AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB8E54AA1F75D6FC00DB41AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB8E54AC1F75D6FC00DB41AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hyggely/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggely;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB8E54AD1F75D6FC00DB41AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hyggely/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggely;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB8E54AF1F75D6FC00DB41AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hyggelyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hyggely.app/hyggely";
+			};
+			name = Debug;
+		};
+		EB8E54B01F75D6FC00DB41AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hyggelyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hyggely.app/hyggely";
+			};
+			name = Release;
+		};
+		EB8E54B21F75D6FC00DB41AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hyggelyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggelyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hyggely;
+			};
+			name = Debug;
+		};
+		EB8E54B31F75D6FC00DB41AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hyggelyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggelyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hyggely;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB8E547A1F75D6FB00DB41AB /* Build configuration list for PBXProject "hyggely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8E54A91F75D6FC00DB41AB /* Debug */,
+				EB8E54AA1F75D6FC00DB41AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB8E54AB1F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8E54AC1F75D6FC00DB41AB /* Debug */,
+				EB8E54AD1F75D6FC00DB41AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB8E54AE1F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggelyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8E54AF1F75D6FC00DB41AB /* Debug */,
+				EB8E54B01F75D6FC00DB41AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB8E54B11F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggelyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8E54B21F75D6FC00DB41AB /* Debug */,
+				EB8E54B31F75D6FC00DB41AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB8E54771F75D6FB00DB41AB /* Project object */;
+}
