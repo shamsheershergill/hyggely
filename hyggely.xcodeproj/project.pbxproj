@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03D013932952B895844FDBCD /* Pods_hyggelyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDF89EA1030F46CCD8F8D2C /* Pods_hyggelyUITests.framework */; };
+		1DDD8DB0DC70E0D4E0EFDF1F /* Pods_hyggely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D84FB95F90FBE478187654 /* Pods_hyggely.framework */; };
+		CAA9DE70284BF18D884C649B /* Pods_hyggelyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D22BF0A558B18AB03F7F0B /* Pods_hyggelyTests.framework */; };
+		EB032C541F82ADD20032C4F7 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C531F82ADD20032C4F7 /* AuthProvider.swift */; };
+		EB032C561F82AE1F0032C4F7 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C551F82AE1F0032C4F7 /* DBProvider.swift */; };
+		EB032C581F82AE790032C4F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C571F82AE790032C4F7 /* Constants.swift */; };
+		EB032C5C1F82B3850032C4F7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C5B1F82B3850032C4F7 /* Contact.swift */; };
+		EB032C5E1F82BC3A0032C4F7 /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C5D1F82BC3A0032C4F7 /* MessagesHandler.swift */; };
 		EB8E54831F75D6FB00DB41AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */; };
-		EB8E54851F75D6FB00DB41AB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54841F75D6FB00DB41AB /* RootViewController.swift */; };
-		EB8E54871F75D6FB00DB41AB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54861F75D6FB00DB41AB /* DataViewController.swift */; };
-		EB8E54891F75D6FB00DB41AB /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54881F75D6FB00DB41AB /* ModelController.swift */; };
 		EB8E548C1F75D6FB00DB41AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548A1F75D6FB00DB41AB /* Main.storyboard */; };
 		EB8E548E1F75D6FB00DB41AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548D1F75D6FB00DB41AB /* Assets.xcassets */; };
 		EB8E54911F75D6FB00DB41AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548F1F75D6FB00DB41AB /* LaunchScreen.storyboard */; };
 		EB8E549C1F75D6FB00DB41AB /* hyggelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E549B1F75D6FB00DB41AB /* hyggelyTests.swift */; };
 		EB8E54A71F75D6FC00DB41AB /* hyggelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54A61F75D6FC00DB41AB /* hyggelyUITests.swift */; };
+		EBBFBA761F7D9B17004DE0ED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFBA741F7D9B17004DE0ED /* ChatViewController.swift */; };
+		EBBFBA771F7D9B17004DE0ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFBA751F7D9B17004DE0ED /* FirstViewController.swift */; };
+		EBBFBA7A1F7D9B31004DE0ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFBA781F7D9B30004DE0ED /* ProfileViewController.swift */; };
+		EBBFBA7B1F7D9B31004DE0ED /* MeetupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFBA791F7D9B31004DE0ED /* MeetupsViewController.swift */; };
+		EBD507BE1F7DA2280004D3AA /* Constants2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD507BD1F7DA2280004D3AA /* Constants2.swift */; };
+		EBD507C11F7DA5BB0004D3AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBD507C01F7DA5B30004D3AA /* GoogleService-Info.plist */; };
+		EBD507C41F7DB3280004D3AA /* launchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD507C31F7DB3280004D3AA /* launchVC.swift */; };
+		EBD507CA1F7DD12E0004D3AA /* ContactsVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD507C91F7DD12E0004D3AA /* ContactsVController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +49,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25D7C3F01E22F13C038651A2 /* Pods-hyggelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggelyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hyggelyTests/Pods-hyggelyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41FB4ED71DD0A740A977C431 /* Pods-hyggely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggely.release.xcconfig"; path = "Pods/Target Support Files/Pods-hyggely/Pods-hyggely.release.xcconfig"; sourceTree = "<group>"; };
+		5EE7D59004C38C7661E2F3E2 /* Pods-hyggelyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggelyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hyggelyTests/Pods-hyggelyTests.release.xcconfig"; sourceTree = "<group>"; };
+		70D84FB95F90FBE478187654 /* Pods_hyggely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hyggely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEF0279C199F56572AA4398 /* Pods-hyggelyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggelyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hyggelyUITests/Pods-hyggelyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8DDF89EA1030F46CCD8F8D2C /* Pods_hyggelyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hyggelyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D22BF0A558B18AB03F7F0B /* Pods_hyggelyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hyggelyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9BB33E2F86DAC4B36BFD4F /* Pods-hyggelyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggelyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hyggelyUITests/Pods-hyggelyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB032C531F82ADD20032C4F7 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		EB032C551F82AE1F0032C4F7 /* DBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		EB032C571F82AE790032C4F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EB032C5B1F82B3850032C4F7 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		EB032C5D1F82BC3A0032C4F7 /* MessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
 		EB8E547F1F75D6FB00DB41AB /* hyggely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyggely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB8E54841F75D6FB00DB41AB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		EB8E54861F75D6FB00DB41AB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		EB8E54881F75D6FB00DB41AB /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		EB8E548B1F75D6FB00DB41AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB8E548D1F75D6FB00DB41AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB8E54901F75D6FB00DB41AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +74,17 @@
 		EB8E54A21F75D6FC00DB41AB /* hyggelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hyggelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E54A61F75D6FC00DB41AB /* hyggelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyggelyUITests.swift; sourceTree = "<group>"; };
 		EB8E54A81F75D6FC00DB41AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBFBA741F7D9B17004DE0ED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EBBFBA751F7D9B17004DE0ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		EBBFBA781F7D9B30004DE0ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EBBFBA791F7D9B31004DE0ED /* MeetupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsViewController.swift; sourceTree = "<group>"; };
+		EBD507BB1F7DA0000004D3AA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EBD507BD1F7DA2280004D3AA /* Constants2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants2.swift; sourceTree = "<group>"; };
+		EBD507C01F7DA5B30004D3AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EBD507C21F7DAFF00004D3AA /* FacebookSDKs-iOS-4.27.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FacebookSDKs-iOS-4.27.0"; sourceTree = "<group>"; };
+		EBD507C31F7DB3280004D3AA /* launchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchVC.swift; sourceTree = "<group>"; };
+		EBD507C91F7DD12E0004D3AA /* ContactsVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVController.swift; sourceTree = "<group>"; };
+		F2340898FD68B386BA4ACBC9 /* Pods-hyggely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggely.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hyggely/Pods-hyggely.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DDD8DB0DC70E0D4E0EFDF1F /* Pods_hyggely.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA9DE70284BF18D884C649B /* Pods_hyggelyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,19 +108,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D013932952B895844FDBCD /* Pods_hyggelyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A91C1C3FC566BE4077A21CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2340898FD68B386BA4ACBC9 /* Pods-hyggely.debug.xcconfig */,
+				41FB4ED71DD0A740A977C431 /* Pods-hyggely.release.xcconfig */,
+				25D7C3F01E22F13C038651A2 /* Pods-hyggelyTests.debug.xcconfig */,
+				5EE7D59004C38C7661E2F3E2 /* Pods-hyggelyTests.release.xcconfig */,
+				DD9BB33E2F86DAC4B36BFD4F /* Pods-hyggelyUITests.debug.xcconfig */,
+				8BEF0279C199F56572AA4398 /* Pods-hyggelyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3A11CA7CE2462AD34CA6858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBD507C21F7DAFF00004D3AA /* FacebookSDKs-iOS-4.27.0 */,
+				70D84FB95F90FBE478187654 /* Pods_hyggely.framework */,
+				D2D22BF0A558B18AB03F7F0B /* Pods_hyggelyTests.framework */,
+				8DDF89EA1030F46CCD8F8D2C /* Pods_hyggelyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB032C591F82AED30032C4F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB032C5A1F82AED80032C4F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBD507C31F7DB3280004D3AA /* launchVC.swift */,
+				EBD507C91F7DD12E0004D3AA /* ContactsVController.swift */,
+				EBBFBA741F7D9B17004DE0ED /* ChatViewController.swift */,
+				EBBFBA751F7D9B17004DE0ED /* FirstViewController.swift */,
+				EBBFBA781F7D9B30004DE0ED /* ProfileViewController.swift */,
+				EBBFBA791F7D9B31004DE0ED /* MeetupsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EB8E54761F75D6FB00DB41AB = {
 			isa = PBXGroup;
 			children = (
+				EBD507BB1F7DA0000004D3AA /* Bridging-Header.h */,
 				EB8E54811F75D6FB00DB41AB /* hyggely */,
 				EB8E549A1F75D6FB00DB41AB /* hyggelyTests */,
 				EB8E54A51F75D6FC00DB41AB /* hyggelyUITests */,
 				EB8E54801F75D6FB00DB41AB /* Products */,
+				7A91C1C3FC566BE4077A21CA /* Pods */,
+				A3A11CA7CE2462AD34CA6858 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +185,17 @@
 		EB8E54811F75D6FB00DB41AB /* hyggely */ = {
 			isa = PBXGroup;
 			children = (
+				EB032C5A1F82AED80032C4F7 /* Controller */,
+				EB032C591F82AED30032C4F7 /* View */,
+				EBD507C81F7DD0FF0004D3AA /* Model */,
+				EBD507C51F7DBCF10004D3AA /* Plugins */,
+				EBD507C01F7DA5B30004D3AA /* GoogleService-Info.plist */,
 				EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */,
-				EB8E54841F75D6FB00DB41AB /* RootViewController.swift */,
-				EB8E54861F75D6FB00DB41AB /* DataViewController.swift */,
-				EB8E54881F75D6FB00DB41AB /* ModelController.swift */,
 				EB8E548A1F75D6FB00DB41AB /* Main.storyboard */,
 				EB8E548D1F75D6FB00DB41AB /* Assets.xcassets */,
 				EB8E548F1F75D6FB00DB41AB /* LaunchScreen.storyboard */,
 				EB8E54921F75D6FB00DB41AB /* Info.plist */,
+				EBD507BD1F7DA2280004D3AA /* Constants2.swift */,
 			);
 			path = hyggely;
 			sourceTree = "<group>";
@@ -131,6 +218,25 @@
 			path = hyggelyUITests;
 			sourceTree = "<group>";
 		};
+		EBD507C51F7DBCF10004D3AA /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				EB032C531F82ADD20032C4F7 /* AuthProvider.swift */,
+				EB032C551F82AE1F0032C4F7 /* DBProvider.swift */,
+				EB032C5D1F82BC3A0032C4F7 /* MessagesHandler.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		EBD507C81F7DD0FF0004D3AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB032C571F82AE790032C4F7 /* Constants.swift */,
+				EB032C5B1F82B3850032C4F7 /* Contact.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB8E54AB1F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggely" */;
 			buildPhases = (
+				2DA7BB2A5BA8EE2E6EA037B0 /* [CP] Check Pods Manifest.lock */,
 				EB8E547B1F75D6FB00DB41AB /* Sources */,
 				EB8E547C1F75D6FB00DB41AB /* Frameworks */,
 				EB8E547D1F75D6FB00DB41AB /* Resources */,
+				6B4AAD9A7C749D66945A7510 /* [CP] Embed Pods Frameworks */,
+				39A8D3979B9BE4E26CCA281D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB8E54AE1F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggelyTests" */;
 			buildPhases = (
+				D317646656F6B253F3DA975D /* [CP] Check Pods Manifest.lock */,
 				EB8E54931F75D6FB00DB41AB /* Sources */,
 				EB8E54941F75D6FB00DB41AB /* Frameworks */,
 				EB8E54951F75D6FB00DB41AB /* Resources */,
+				3965E4C63171AF1E2611C455 /* [CP] Embed Pods Frameworks */,
+				90941B4B105BDC048293EA57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB8E54B11F75D6FC00DB41AB /* Build configuration list for PBXNativeTarget "hyggelyUITests" */;
 			buildPhases = (
+				9EB4A0AFC534BAECB3E3D17E /* [CP] Check Pods Manifest.lock */,
 				EB8E549E1F75D6FC00DB41AB /* Sources */,
 				EB8E549F1F75D6FC00DB41AB /* Frameworks */,
 				EB8E54A01F75D6FC00DB41AB /* Resources */,
+				D9F4759BA2BE5398DF8DC8E5 /* [CP] Embed Pods Frameworks */,
+				D22169D2F8C80E96138BDEBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD507C11F7DA5BB0004D3AA /* GoogleService-Info.plist in Resources */,
 				EB8E54911F75D6FB00DB41AB /* LaunchScreen.storyboard in Resources */,
 				EB8E548E1F75D6FB00DB41AB /* Assets.xcassets in Resources */,
 				EB8E548C1F75D6FB00DB41AB /* Main.storyboard in Resources */,
@@ -260,15 +376,184 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DA7BB2A5BA8EE2E6EA037B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hyggely-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3965E4C63171AF1E2611C455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyggelyTests/Pods-hyggelyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39A8D3979B9BE4E26CCA281D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyggely/Pods-hyggely-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B4AAD9A7C749D66945A7510 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hyggely/Pods-hyggely-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyggely/Pods-hyggely-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90941B4B105BDC048293EA57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyggelyTests/Pods-hyggelyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EB4A0AFC534BAECB3E3D17E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hyggelyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D22169D2F8C80E96138BDEBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyggelyUITests/Pods-hyggelyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D317646656F6B253F3DA975D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hyggelyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9F4759BA2BE5398DF8DC8E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hyggelyUITests/Pods-hyggelyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB8E547B1F75D6FB00DB41AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB8E54851F75D6FB00DB41AB /* RootViewController.swift in Sources */,
-				EB8E54891F75D6FB00DB41AB /* ModelController.swift in Sources */,
-				EB8E54871F75D6FB00DB41AB /* DataViewController.swift in Sources */,
+				EB032C5C1F82B3850032C4F7 /* Contact.swift in Sources */,
+				EB032C5E1F82BC3A0032C4F7 /* MessagesHandler.swift in Sources */,
+				EBBFBA7B1F7D9B31004DE0ED /* MeetupsViewController.swift in Sources */,
+				EBBFBA771F7D9B17004DE0ED /* FirstViewController.swift in Sources */,
+				EB032C541F82ADD20032C4F7 /* AuthProvider.swift in Sources */,
+				EBD507CA1F7DD12E0004D3AA /* ContactsVController.swift in Sources */,
+				EBBFBA7A1F7D9B31004DE0ED /* ProfileViewController.swift in Sources */,
+				EBBFBA761F7D9B17004DE0ED /* ChatViewController.swift in Sources */,
+				EB032C561F82AE1F0032C4F7 /* DBProvider.swift in Sources */,
+				EBD507C41F7DB3280004D3AA /* launchVC.swift in Sources */,
 				EB8E54831F75D6FB00DB41AB /* AppDelegate.swift in Sources */,
+				EBD507BE1F7DA2280004D3AA /* Constants2.swift in Sources */,
+				EB032C581F82AE790032C4F7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,13 +717,16 @@
 		};
 		EB8E54AC1F75D6FC00DB41AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2340898FD68B386BA4ACBC9 /* Pods-hyggely.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDG656L8S2;
 				INFOPLIST_FILE = hyggely/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggely;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -446,13 +734,16 @@
 		};
 		EB8E54AD1F75D6FC00DB41AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41FB4ED71DD0A740A977C431 /* Pods-hyggely.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DDG656L8S2;
 				INFOPLIST_FILE = hyggely/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hyggely.hyggely;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +751,7 @@
 		};
 		EB8E54AF1F75D6FC00DB41AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D7C3F01E22F13C038651A2 /* Pods-hyggelyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -476,6 +768,7 @@
 		};
 		EB8E54B01F75D6FC00DB41AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE7D59004C38C7661E2F3E2 /* Pods-hyggelyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +785,7 @@
 		};
 		EB8E54B21F75D6FC00DB41AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD9BB33E2F86DAC4B36BFD4F /* Pods-hyggelyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,6 +801,7 @@
 		};
 		EB8E54B31F75D6FC00DB41AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BEF0279C199F56572AA4398 /* Pods-hyggelyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
