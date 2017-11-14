@@ -10,4 +10,7 @@
 #define Bridging_Header_h
 
 #import <JSQMessagesViewController/JSQMessages.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+
+#import <Stripe/Stripe.h>
 #endif /* Bridging_Header_h */

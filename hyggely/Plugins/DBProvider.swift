@@ -33,36 +33,88 @@ class DBProvider {
     }
     
     var storageRef: StorageReference {
-        return Storage.storage().reference(forURL: "gs:chat-38e12.appspot.com");
+        return Storage.storage().reference();
         //https://chat-38e12.firebaseio.com/
 
     }
     
-
+    var ridersRef: DatabaseReference {
+        return dbRef.child(Constants.TRAVELERS);
+    }
+    
+    var driversRef: DatabaseReference {
+        return dbRef.child(Constants.HOSTS);
+    }
+    
+    var requestRef: DatabaseReference {
+        return dbRef.child(Constants.HYGGE_REQUEST);
+    }
+    
+    var requestAcceptedRef: DatabaseReference {
+        return dbRef.child(Constants.HYGGE_ACCEPTED);
+    }
+    
+    var usersRef: DatabaseReference {
+        return dbRef.child(Constants.USERS)
+    }
 
     func saveUser(withID: String, email: String, password: String) {
-        let data: Dictionary<String, Any> = [Constants.EMAIL: email, Constants.PASSWORD: password];
+        let data: Dictionary<String, Any> = [Constants.EMAIL: email, Constants.PASSWORD: password, Constants.isHost: "true"];
         
         contactsRef.child(withID).setValue(data);
     }
     
-    func getContacts() {
-        
-        contactsRef.observeSingleEvent(of: DataEventType.value) {
+ 
+   /* //local
+    func saveLUser(withID: String, email: String, password: String) {
+        let data: Dictionary<String, Any> = [Constants.EMAIL: email, Constants.PASSWORD: password, Constants.isRider: true];
+        ridersRef.child(withID).child(Constants.DATA).setValue(data);
+    }
+    
+    //traveler
+    func saveTUser(withID: String, email: String, password: String) {
+        let data: Dictionary<String, Any> = [Constants.EMAIL: email, Constants.PASSWORD: password, Constants.isRider: false];
+        driversRef.child(withID).child(Constants.DATA).setValue(data);
+    }
+ */
+    
+    func getContacts(isHost: Bool) {
+        var ref = driversRef
+        if (isHost) {
+           ref  = driversRef
+        }
+        else{
+            ref = ridersRef
+        }
+        ref.observeSingleEvent(of: DataEventType.value) {
             (snapshot: DataSnapshot) in
             var contacts = [Contact]();
             
-            if let myContacts = snapshot.value as? NSDictionary {
+            if  var myContacts = snapshot.value as? NSDictionary {
                 
                 for (key, value) in myContacts {
                     
-                    if let contactData = value as? NSDictionary {
+                    if  var contactData = value as? NSDictionary {
                         
-                        if let email = contactData[Constants.EMAIL] as? String {
-                            
-                            let id = key as! String;
-                            let newContact = Contact(id: id, name: email);
-                            contacts.append(newContact);
+                        if let name = contactData[Constants.NAME] as? String {
+                            if let URL = contactData["URL"] as? String{
+                                if let desc = contactData[Constants.DESCRIPTION] as? String{
+                                    if let paid = contactData["paid"] as? Bool {
+                                        if let service = contactData["service"] as? String
+                                        {
+                                            if let otherPartyName = contactData["otherPartyName"] as? String {
+                                           let longLocation = contactData["longLocation"] as? Double
+                                                let latLocation = contactData["latLocation"] as? Double
+                                           
+                                                let id = key as! String;
+                                                let newContact = Contact(id: id, name: name, url: URL, desc: desc, paid: paid, service: service, otherPartyName: otherPartyName, longLocation: longLocation!, latLocation: latLocation!);
+                                            contacts.append(newContact);
+                                            
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -72,6 +124,7 @@ class DBProvider {
         
     }
     
+   
 }
 
 

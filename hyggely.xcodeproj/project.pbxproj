@@ -10,11 +10,18 @@
 		03D013932952B895844FDBCD /* Pods_hyggelyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DDF89EA1030F46CCD8F8D2C /* Pods_hyggelyUITests.framework */; };
 		1DDD8DB0DC70E0D4E0EFDF1F /* Pods_hyggely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D84FB95F90FBE478187654 /* Pods_hyggely.framework */; };
 		CAA9DE70284BF18D884C649B /* Pods_hyggelyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D22BF0A558B18AB03F7F0B /* Pods_hyggelyTests.framework */; };
+		EB01432A1F8EBB4100881C5A /* UserPrefVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0143291F8EBB4100881C5A /* UserPrefVC.swift */; };
+		EB01432C1F901D9E00881C5A /* MeetupsVCRider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01432B1F901D9D00881C5A /* MeetupsVCRider.swift */; };
+		EB01432E1F901DEA00881C5A /* MeetupsVCDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB01432D1F901DEA00881C5A /* MeetupsVCDriver.swift */; };
 		EB032C541F82ADD20032C4F7 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C531F82ADD20032C4F7 /* AuthProvider.swift */; };
 		EB032C561F82AE1F0032C4F7 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C551F82AE1F0032C4F7 /* DBProvider.swift */; };
 		EB032C581F82AE790032C4F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C571F82AE790032C4F7 /* Constants.swift */; };
 		EB032C5C1F82B3850032C4F7 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C5B1F82B3850032C4F7 /* Contact.swift */; };
 		EB032C5E1F82BC3A0032C4F7 /* MessagesHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C5D1F82BC3A0032C4F7 /* MessagesHandler.swift */; };
+		EB032C601F87F1B50032C4F7 /* MeetupsHandlerRider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C5F1F87F1B50032C4F7 /* MeetupsHandlerRider.swift */; };
+		EB032C621F87FF170032C4F7 /* MeeuptsHandlerDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB032C611F87FF170032C4F7 /* MeeuptsHandlerDriver.swift */; };
+		EB36F1361F9FB46E00CC72ED /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36F1351F9FB46E00CC72ED /* CheckoutVC.swift */; };
+		EB36F1381F9FC99C00CC72ED /* MyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36F1371F9FC99C00CC72ED /* MyAPIClient.swift */; };
 		EB8E54831F75D6FB00DB41AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */; };
 		EB8E548C1F75D6FB00DB41AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548A1F75D6FB00DB41AB /* Main.storyboard */; };
 		EB8E548E1F75D6FB00DB41AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8E548D1F75D6FB00DB41AB /* Assets.xcassets */; };
@@ -25,10 +32,14 @@
 		EBBFBA771F7D9B17004DE0ED /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFBA751F7D9B17004DE0ED /* FirstViewController.swift */; };
 		EBBFBA7A1F7D9B31004DE0ED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFBA781F7D9B30004DE0ED /* ProfileViewController.swift */; };
 		EBBFBA7B1F7D9B31004DE0ED /* MeetupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBFBA791F7D9B31004DE0ED /* MeetupsViewController.swift */; };
+		EBC1BBCE1F96B8DD009F35AD /* BookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1BBCD1F96B8DD009F35AD /* BookVC.swift */; };
+		EBC1BBD81F97D5CE009F35AD /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1BBD71F97D5CE009F35AD /* PhotoHelper.swift */; };
 		EBD507BE1F7DA2280004D3AA /* Constants2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD507BD1F7DA2280004D3AA /* Constants2.swift */; };
 		EBD507C11F7DA5BB0004D3AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBD507C01F7DA5B30004D3AA /* GoogleService-Info.plist */; };
 		EBD507C41F7DB3280004D3AA /* launchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD507C31F7DB3280004D3AA /* launchVC.swift */; };
 		EBD507CA1F7DD12E0004D3AA /* ContactsVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD507C91F7DD12E0004D3AA /* ContactsVController.swift */; };
+		EBE1A35C1F880E62009BB88D /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE1A35B1F880E62009BB88D /* ChatsVC.swift */; };
+		EBE1A35E1F880E74009BB88D /* MeetupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE1A35D1F880E74009BB88D /* MeetupsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +68,18 @@
 		8DDF89EA1030F46CCD8F8D2C /* Pods_hyggelyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hyggelyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D22BF0A558B18AB03F7F0B /* Pods_hyggelyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hyggelyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9BB33E2F86DAC4B36BFD4F /* Pods-hyggelyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggelyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hyggelyUITests/Pods-hyggelyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB0143291F8EBB4100881C5A /* UserPrefVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrefVC.swift; sourceTree = "<group>"; };
+		EB01432B1F901D9D00881C5A /* MeetupsVCRider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsVCRider.swift; sourceTree = "<group>"; };
+		EB01432D1F901DEA00881C5A /* MeetupsVCDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsVCDriver.swift; sourceTree = "<group>"; };
 		EB032C531F82ADD20032C4F7 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		EB032C551F82AE1F0032C4F7 /* DBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
 		EB032C571F82AE790032C4F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EB032C5B1F82B3850032C4F7 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		EB032C5D1F82BC3A0032C4F7 /* MessagesHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesHandler.swift; sourceTree = "<group>"; };
+		EB032C5F1F87F1B50032C4F7 /* MeetupsHandlerRider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsHandlerRider.swift; sourceTree = "<group>"; };
+		EB032C611F87FF170032C4F7 /* MeeuptsHandlerDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeeuptsHandlerDriver.swift; sourceTree = "<group>"; };
+		EB36F1351F9FB46E00CC72ED /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
+		EB36F1371F9FC99C00CC72ED /* MyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIClient.swift; sourceTree = "<group>"; };
 		EB8E547F1F75D6FB00DB41AB /* hyggely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hyggely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8E54821F75D6FB00DB41AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB8E548B1F75D6FB00DB41AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,12 +96,16 @@
 		EBBFBA751F7D9B17004DE0ED /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		EBBFBA781F7D9B30004DE0ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EBBFBA791F7D9B31004DE0ED /* MeetupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsViewController.swift; sourceTree = "<group>"; };
+		EBC1BBCD1F96B8DD009F35AD /* BookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookVC.swift; sourceTree = "<group>"; };
+		EBC1BBD71F97D5CE009F35AD /* PhotoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
 		EBD507BB1F7DA0000004D3AA /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		EBD507BD1F7DA2280004D3AA /* Constants2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants2.swift; sourceTree = "<group>"; };
 		EBD507C01F7DA5B30004D3AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBD507C21F7DAFF00004D3AA /* FacebookSDKs-iOS-4.27.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "FacebookSDKs-iOS-4.27.0"; sourceTree = "<group>"; };
 		EBD507C31F7DB3280004D3AA /* launchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchVC.swift; sourceTree = "<group>"; };
 		EBD507C91F7DD12E0004D3AA /* ContactsVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVController.swift; sourceTree = "<group>"; };
+		EBE1A35B1F880E62009BB88D /* ChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
+		EBE1A35D1F880E74009BB88D /* MeetupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupsVC.swift; sourceTree = "<group>"; };
 		F2340898FD68B386BA4ACBC9 /* Pods-hyggely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hyggely.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hyggely/Pods-hyggely.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +177,13 @@
 				EBBFBA751F7D9B17004DE0ED /* FirstViewController.swift */,
 				EBBFBA781F7D9B30004DE0ED /* ProfileViewController.swift */,
 				EBBFBA791F7D9B31004DE0ED /* MeetupsViewController.swift */,
+				EBE1A35B1F880E62009BB88D /* ChatsVC.swift */,
+				EBE1A35D1F880E74009BB88D /* MeetupsVC.swift */,
+				EB0143291F8EBB4100881C5A /* UserPrefVC.swift */,
+				EB01432B1F901D9D00881C5A /* MeetupsVCRider.swift */,
+				EB01432D1F901DEA00881C5A /* MeetupsVCDriver.swift */,
+				EBC1BBCD1F96B8DD009F35AD /* BookVC.swift */,
+				EB36F1351F9FB46E00CC72ED /* CheckoutVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +253,10 @@
 				EB032C531F82ADD20032C4F7 /* AuthProvider.swift */,
 				EB032C551F82AE1F0032C4F7 /* DBProvider.swift */,
 				EB032C5D1F82BC3A0032C4F7 /* MessagesHandler.swift */,
+				EB032C5F1F87F1B50032C4F7 /* MeetupsHandlerRider.swift */,
+				EB032C611F87FF170032C4F7 /* MeeuptsHandlerDriver.swift */,
+				EBC1BBD71F97D5CE009F35AD /* PhotoHelper.swift */,
+				EB36F1371F9FC99C00CC72ED /* MyAPIClient.swift */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -432,19 +465,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-hyggely/Pods-hyggely-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -541,18 +580,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB01432A1F8EBB4100881C5A /* UserPrefVC.swift in Sources */,
+				EB032C621F87FF170032C4F7 /* MeeuptsHandlerDriver.swift in Sources */,
 				EB032C5C1F82B3850032C4F7 /* Contact.swift in Sources */,
 				EB032C5E1F82BC3A0032C4F7 /* MessagesHandler.swift in Sources */,
 				EBBFBA7B1F7D9B31004DE0ED /* MeetupsViewController.swift in Sources */,
+				EBE1A35C1F880E62009BB88D /* ChatsVC.swift in Sources */,
+				EB36F1361F9FB46E00CC72ED /* CheckoutVC.swift in Sources */,
+				EB032C601F87F1B50032C4F7 /* MeetupsHandlerRider.swift in Sources */,
 				EBBFBA771F7D9B17004DE0ED /* FirstViewController.swift in Sources */,
 				EB032C541F82ADD20032C4F7 /* AuthProvider.swift in Sources */,
 				EBD507CA1F7DD12E0004D3AA /* ContactsVController.swift in Sources */,
+				EB36F1381F9FC99C00CC72ED /* MyAPIClient.swift in Sources */,
+				EB01432C1F901D9E00881C5A /* MeetupsVCRider.swift in Sources */,
 				EBBFBA7A1F7D9B31004DE0ED /* ProfileViewController.swift in Sources */,
 				EBBFBA761F7D9B17004DE0ED /* ChatViewController.swift in Sources */,
+				EBC1BBCE1F96B8DD009F35AD /* BookVC.swift in Sources */,
+				EBC1BBD81F97D5CE009F35AD /* PhotoHelper.swift in Sources */,
 				EB032C561F82AE1F0032C4F7 /* DBProvider.swift in Sources */,
 				EBD507C41F7DB3280004D3AA /* launchVC.swift in Sources */,
 				EB8E54831F75D6FB00DB41AB /* AppDelegate.swift in Sources */,
+				EB01432E1F901DEA00881C5A /* MeetupsVCDriver.swift in Sources */,
 				EBD507BE1F7DA2280004D3AA /* Constants2.swift in Sources */,
+				EBE1A35E1F880E74009BB88D /* MeetupsVC.swift in Sources */,
 				EB032C581F82AE790032C4F7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

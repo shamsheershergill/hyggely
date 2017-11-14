@@ -53,8 +53,22 @@
 	</array>
 	<key>FacebookDisplayName</key>
 	<string>Hyggely Dev</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Your location is needed to find the nearest Hyggely member.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Access your photo library to upload profile image.</string>
+	<key>Firebase</key>
+	<dict/>
+	<key>storage_path</key>
+	<string>https://chat-38e12.appspot.com/
+https://chat-38e12.firebaseio.com/
+</string>
 	<key>CFBundleURLTypes</key>
 	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>

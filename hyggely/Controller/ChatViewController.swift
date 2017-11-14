@@ -13,15 +13,17 @@ import UIKit
 import JSQMessagesViewController
 import MobileCoreServices
 import AVKit
-
+import FirebaseAuth
 
 class ChatViewController: JSQMessagesViewController, MessageReceivedDelegate, UINavigationControllerDelegate {
     func mediaReceived(senderID: String, senderName: String, url: String) {
         
         // comment
     }
-    
-    
+    var didSendFirstMsg = false
+    var timer = Timer()
+    var isHost = false
+
     private var messages = [JSQMessage]();
     
     //let picker = UIImagePickerController();
@@ -37,6 +39,19 @@ class ChatViewController: JSQMessagesViewController, MessageReceivedDelegate, UI
         
         MessagesHandler.Instance.observeMessages();
      //   MessagesHandler.Instance.observeMediaMessages();
+        let userID = Auth.auth().currentUser?.uid
+        DBProvider.Instance.contactsRef.child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            if(snapshot.exists())
+            {
+                let userDict = snapshot.value as! [String: Any]
+                let dbHost = userDict["isHost"] as? String
+                print ("DIS BE DA HOST")
+                print(dbHost)
+                let isHost = ( dbHost == "true")
+                
+            }
+            
+        })
         
     }
     
@@ -92,13 +107,25 @@ class ChatViewController: JSQMessagesViewController, MessageReceivedDelegate, UI
     // SENDING BUTTONS FUNCTIONS
     
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
-        
-        MessagesHandler.Instance.sendMessage(senderID: senderId, senderName: senderDisplayName, text: text);
-        
-        // this will remove the text from the text field
-        finishSendingMessage();
-        
+     
+        if(messages[1].date != nil )
+        {
+          
+            var  stopDate = Date(timeInterval: 120, since: messages[1].date)
+            MessagesHandler.Instance.sendMessage(senderID: senderId, senderName: senderDisplayName, text: text);
+            
+            // this will remove the text from the text field
+            finishSendingMessage();
+            
+            
+        }
+        else{
+            self.inputToolbar.contentView.rightBarButtonItem.isEnabled = false
+        }
+
     }
+    
+    
     
    /* override func didPressAccessoryButton(_ sender: UIButton!) {
         let alert = UIAlertController(title: "Media Messages", message: "Please Select A Media", preferredStyle: .actionSheet);

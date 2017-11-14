@@ -8,9 +8,11 @@
 
 import UIKit
 import MapKit
+import FirebaseDatabase
 
 class MeetupsViewController: UIViewController {
+//this will be used display the paid accepted request
     
-    //println ("this is the meetups screen")
+    
 
 }

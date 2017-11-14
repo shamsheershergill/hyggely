@@ -14,6 +14,9 @@ target 'hyggely' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'JSQMessagesViewController'
+  pod 'SVProgressHUD'
+  pod 'Stripe'
+  pod 'Alamofire'
 
   target 'hyggelyTests' do
     inherit! :search_paths

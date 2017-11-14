@@ -101,26 +101,26 @@ class AuthProvider {
             
             switch errCode {
                 
-          /*  case .errorCodeWrongPassword:
+           case .wrongPassword:
                 loginHandler?(LoginErrorCode.WRONG_PASSWORD);
                 break;
                 
-            case .errorCodeInvalidEmail:
+            case .invalidEmail:
                 loginHandler?(LoginErrorCode.INVALID_EMAIL);
                 break;
                 
-            case .errorCodeUserNotFound:
+            case .userNotFound:
                 loginHandler?(LoginErrorCode.USER_NOT_FOUND);
                 break;
                 
-            case .errorCodeEmailAlreadyInUse:
+            case .emailAlreadyInUse:
                 loginHandler?(LoginErrorCode.EMAIL_ALREADY_IN_USE);
                 break;
                 
-            case .errorCodeWeakPassword:
+            case .weakPassword:
                 loginHandler?(LoginErrorCode.WEAK_PASSWORD);
                 break;
-                */
+                
             default:
                 loginHandler?(LoginErrorCode.PROBLEM_CONNECTING);
                 break;

@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseAuth
-
+//NSLocationWhenInUseUsageDescription this property needs to be set in info.plist
 class launchVC: UIViewController {
 
     @IBOutlet var password: UITextField!
@@ -33,7 +33,7 @@ class launchVC: UIViewController {
                     self.email.text = "";
                     self.password.text = "";
                     
-                    self.performSegue(withIdentifier: self.HOMESEGUE, sender: nil);
+                    self.performSegue(withIdentifier: "prefSegue2", sender: nil);
                 }
                 
             })
